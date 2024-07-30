@@ -8,15 +8,14 @@ const sumAll = function(firstNumber, secondNumber) {
     if (firstNumber<0 || secondNumber<0) {
         return "ERROR";
     }
+    
     let end = (firstNumber < secondNumber ? secondNumber: firstNumber);
     let start = (firstNumber > secondNumber ? secondNumber: firstNumber);
     let number = (start < end ? start : end);
     let numberToAdd = number;
-    let i = 1;
-    while (i != end) {
+    while (numberToAdd != end) {
         numberToAdd += 1;
         number += numberToAdd;
-        i += 1;
     }
     return number;
 };
