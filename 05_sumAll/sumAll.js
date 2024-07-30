@@ -11,7 +11,7 @@ const sumAll = function(firstNumber, secondNumber) {
     
     let end = (firstNumber < secondNumber ? secondNumber: firstNumber);
     let start = (firstNumber > secondNumber ? secondNumber: firstNumber);
-    let number = (start < end ? start : end);
+    let number = start;
     let numberToAdd = number;
     while (numberToAdd != end) {
         numberToAdd += 1;
